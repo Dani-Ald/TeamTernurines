@@ -1,17 +1,20 @@
-import matplotlib.pyplot as plt
- 
-# Función para crear gráfico de pastel
-def crear_grafico_pastel(datos, marcas_texto):
-    separaciones = [0] * len(datos)  # Lista de ceros del mismo tamaño que datos
-    plt.figure(figsize=(8, 8))
-    plt.pie(datos, 
-            explode=separaciones,  
-            counterclock=False, 
-            startangle=90, 
-            autopct="%0.1f%%", 
-            pctdistance=0.8, 
-            colors=["#EF90F1", "#90E7F1", "#D8B4EF", "#C7EFB4", "#EFB4C7", "#EFE4B4"], 
-            labels=marcas_texto)
-    plt.title("Grafico de pastel", fontsize=20)
-    plt.show()
+def generar_clase_y_FABS(arr):
+    # Inicializar diccionario para contar frecuencias
+    frecuencia_dict = {}
     
+    # Contar frecuencias de cada elemento
+    for item in arr:
+        if item in frecuencia_dict:
+            frecuencia_dict[item] += 1
+        else:
+            frecuencia_dict[item] = 1
+            
+    # Extraer clases y frecuencias en listas separadas
+    clases = list(frecuencia_dict.keys())
+    frecuencias = list(frecuencia_dict.values())
+    
+    # Find the lower and upper limits of the data
+    lower_limit = min(frecuencias)
+    upper_limit = max(frecuencias)
+    
+    return clases, frecuencias, lower_limit, upper_limit
