@@ -1,28 +1,3 @@
-# Find the lower and upper limits of the data
-    lower_limit = min(frecuencias)
-    upper_limit = max(frecuencias)
-    
-    return clases, frecuencias, lower_limit, upper_limit
-def generar_clase_y_FABS(arr):
-    # Inicializar diccionario para contar frecuencias
-    frecuencia_dict = {}
-    
-    # Contar frecuencias de cada elemento
-    for item in arr:
-        if item in frecuencia_dict:
-            frecuencia_dict[item] += 1
-        else:
-            frecuencia_dict[item] = 1
-            
-    # Extraer clases y frecuencias en listas separadas
-    clases = list(frecuencia_dict.keys())
-    frecuencias = list(frecuencia_dict.values())
-    
-    # Find the lower and upper limits of the data
-    lower_limit = min(frecuencias)
-    upper_limit = max(frecuencias)
-    
-    return clases, frecuencias, lower_limit, upper_limit
 def imprimir_tabla(clases_orden, fa_sorted, frecuencia_rel, frecuencia_rel_acum, lower_limit, upper_limit):
     # Imprimir encabezados
     print('Clases'.ljust(10), 'Fa'.ljust(8), 'Fr'.ljust(8), 'F acumulada'.ljust(12), 'Lim inferior'.ljust(12), 'Lim superior'.ljust(12))
@@ -36,5 +11,3 @@ def imprimir_tabla(clases_orden, fa_sorted, frecuencia_rel, frecuencia_rel_acum,
               str(frecuencia_rel_acum[i]).ljust(12), 
               str(lower_limit).ljust(12), 
               str(upper_limit).ljust(12))
-
-imprimir_tabla(clases_ordenadas, frecuencias_ordenadas, frecuencias_relativas, frecuencias_acumuladas, lower_limit, upper_limit)
