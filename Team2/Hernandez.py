@@ -1,3 +1,4 @@
+# Definición de la función generar_clase_y_FABS
 def generar_clase_y_FABS(arr):
     # Inicializar diccionario para contar frecuencias
     frecuencia_dict = {}
@@ -14,7 +15,8 @@ def generar_clase_y_FABS(arr):
     frecuencias = list(frecuencia_dict.values())
     
     return clases, frecuencias
-    
+
+# Definición de la función clases_sorted
 def clases_sorted(clases, frecuencias):
     # Ordenar los datos basados en las clases
     data = sorted(zip(clases, frecuencias))
