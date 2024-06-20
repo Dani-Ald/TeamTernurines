@@ -15,3 +15,6 @@ def generar_clase_y_FABS(arr):
     
     return clases, frecuencias
     
+
+
+
