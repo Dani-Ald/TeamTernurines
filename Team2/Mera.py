@@ -1,9 +1,9 @@
-[2:02 p. m., 20/6/2024] +52 1 772 114 1865: # Find the lower and upper limits of the data
+# Find the lower and upper limits of the data
     lower_limit = min(frecuencias)
     upper_limit = max(frecuencias)
     
     return clases, frecuencias, lower_limit, upper_limit
-[2:03 p. m., 20/6/2024] +52 1 772 114 1865: def generar_clase_y_FABS(arr):
+def generar_clase_y_FABS(arr):
     # Inicializar diccionario para contar frecuencias
     frecuencia_dict = {}
     
@@ -23,7 +23,7 @@
     upper_limit = max(frecuencias)
     
     return clases, frecuencias, lower_limit, upper_limit
-[2:09 p. m., 20/6/2024] +52 1 772 114 1865: def imprimir_tabla(clases_orden, fa_sorted, frecuencia_rel, frecuencia_rel_acum, lower_limit, upper_limit):
+def imprimir_tabla(clases_orden, fa_sorted, frecuencia_rel, frecuencia_rel_acum, lower_limit, upper_limit):
     # Imprimir encabezados
     print('Clases'.ljust(10), 'Fa'.ljust(8), 'Fr'.ljust(8), 'F acumulada'.ljust(12), 'Lim inferior'.ljust(12), 'Lim superior'.ljust(12))
     print('------'.ljust(10), '---'.ljust(8), '---'.ljust(8), '-----------'.ljust(12), '------------'.ljust(12), '------------'.ljust(12))
