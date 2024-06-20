@@ -22,14 +22,3 @@ def clases_sorted(clases, frecuencias):
     data = sorted(zip(clases, frecuencias))
     list_c, list_FA = zip(*data)
     return list_c, list_FA
-
-# Ejemplo de uso
-arreglo = ['agua', 'arroz', 'pollo', 'verduras', 'agua', 'verduras', 'arroz', 'pollo', 'gas', 'pollo', 'gas', 'cominos', 'verduras', 'agua', 'gas']
-
-# Obtener clases y frecuencias
-clases, frecuencias = generar_clase_y_FABS(arreglo)
-
-# Ordenar y mostrar clases y frecuencias ordenadas
-clases_ordenadas, frecuencias_ordenadas = clases_sorted(clases, frecuencias)
-print("Clases ordenadas:", clases_ordenadas)
-print("Frecuencias ordenadas:", frecuencias_ordenadas)
