@@ -13,8 +13,4 @@ def generar_clase_y_FABS(arr):
     clases = list(frecuencia_dict.keys())
     frecuencias = list(frecuencia_dict.values())
     
-    # Find the lower and upper limits of the data
-    lower_limit = min(frecuencias)
-    upper_limit = max(frecuencias)
-    
-    return clases, frecuencias, lower_limit, upper_limit
+    return clases, frecuencias
