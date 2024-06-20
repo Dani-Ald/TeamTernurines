@@ -63,8 +63,6 @@ def crear_grafico_pastel(datos, marcas_texto):
     plt.title("Grafico de pastel", fontsize=20)
     plt.show()
 
-# Uso de la función
-datos = frecuencias_ordenadas
-marcas_texto = clases_ordenadas
+
 
 

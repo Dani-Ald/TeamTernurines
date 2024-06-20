@@ -26,3 +26,4 @@ marcas_clase = ['agua', 'arroz', 'cominos', 'gas', 'pollo', 'verduras']
 frecuencias = [20.0, 33.33333333333333, 46.666666666666664, 60.0, 80.0, 100.0]
 marcas_texto = ['Agua', 'Arroz', 'Cominos', 'Gas', 'Pollo', 'Verduras']
 
+crear_ojiva(marcas_clase, frecuencias, marcas_texto)
