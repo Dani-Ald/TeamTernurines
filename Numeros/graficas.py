@@ -1,5 +1,4 @@
 import matplotlib.pyplot as plt
-
 def crear_histograma(marcas_clase, frecuencias):
     plt.figure(figsize=(12, 6))
     plt.bar(marcas_clase, frecuencias,
