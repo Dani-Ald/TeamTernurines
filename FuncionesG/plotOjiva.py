@@ -24,7 +24,7 @@ def plot_grafOjiva(marcas_clase, valores_ref_eje, facum):
     # Dibujar la ojiva
     plt.plot(datos_x_ojiva, datos_y_ojiva, 
              # Ancho de la línea
-             linewidth=3, 
+             linewidth=2, 
              # Color de la línea
              color="#1C2833",
              # Estilo de la línea
